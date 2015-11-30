@@ -3,7 +3,6 @@ var Logger = require('../');
 var observ = require('observ');
 
 var state = Logger({
-  event: ''
 });
 
 var loop = require('main-loop')( state(), Logger.render, vdom );

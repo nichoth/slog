@@ -8,20 +8,9 @@ module.exports = App;
 
 function App(opts) {
   opts = opts || {};
-  var event = opts.event || function(){};
 
   var state = struct({
-    form: Form({rows: [{field: 'ham', value: 'test'}]})
-  });
-
-  event(function onChange(rows) {
-    var formEmitter = Form({
-      rows: rows
-    });
-    state.form.set(formEmitter());
-    formEmitter(function onChange(data) {
-      state.form.set(data);
-    });
+    form: Form({ rows: [{ field: '', value: '' }] })
   });
 
   return state;
@@ -31,6 +20,6 @@ function App(opts) {
 
 App.render = function(state) {
   return h('div.app', [
-    Form.render(state.form)
+    Form.render(h, state.form)
   ]);
 };
