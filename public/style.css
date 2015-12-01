@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.seperator {
+  margin-left: 2em;
+  margin-right: 2em; }
+
+.vdom-button {
+  opacity: 0.5;
+  float: right;
+  position: relative;
+  top: 0.3em; }
+
+.vdom-button:hover {
+  opacity: 0.3; }
+
+.vdom-kv-form {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 1em;
+  margin: 3em; }
+
+.vdom-kv-form-button-row {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  margin-bottom: 1em; }
+
+.vdom-kv-form-row:last-child {
+  margin-bottom: 2em; }
+
+.vdom-kv-form-row:first-child {
+  margin-top: 4em; }
+
+.vdom-kv-form-row {
+  width: 90%;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke; }
+
+.vdom-kv-form-button {
+  padding: 0.4em 0.6em;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid gray;
+  background-color: whitesmoke; }
+
+.vdom-kv-form-button:hover {
+  cursor: pointer;
+  background-color: #fff; }
+
+.vdom-kv-input {
+  display: inline-block;
+  font-size: 1.2em; }
+
+.vdom-kv-input input {
+  background-color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: gray;
+  transition: all 250ms;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid lightgray; }
+
+.vdom-kv-input input:focus {
+  border-bottom: 1px solid #00bcd4; }
+
+.vdom-kv-input input {
+  color: black;
+  letter-spacing: 0.04em;
+  font-size: 1.3em; }
+  .vdom-kv-input input::-webkit-input-placeholder {
+    opacity: 0.4; }
+  .vdom-kv-input input::-moz-placeholder {
+    opacity: 0.4; }
+  .vdom-kv-input input:-moz-placeholder {
+    opacity: 0.4; }
+  .vdom-kv-input input:-ms-input-placeholder {
+    opacity: 0.4; }

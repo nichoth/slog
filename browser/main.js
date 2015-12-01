@@ -1,5 +1,5 @@
 var vdom = require('virtual-dom');
-var Logger = require('../');
+var Logger = require('../lib/App.js');
 var observ = require('observ');
 
 var state = Logger({

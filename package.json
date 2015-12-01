@@ -8,13 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -d example/example.js > example/bundle.js",
-    "watch": "watchify example/example.js -o example/bundle.js -dv",
-    "build-sass": "node-sass style/main.scss > example/style.css",
-    "watch-sass": "node-sass --watch style/main.scss example/style.css",
+    "build": "browserify -d browser/main.js > public/bundle.js",
+    "watch": "watchify browser/main.js -o public/bundle.js -dv",
+    "build-sass": "node-sass style/main.scss > public/style.css",
+    "watch-sass": "node-sass --watch style/main.scss public/style.css",
     "dev": "npm run watch & npm run watch-sass & npm run server",
     "server": "node server.js",
-    "demo": "browserify example/example.js > example/bundle.js && html-inline example/index.html | curl -sT- https://htmlb.in"
+    "demo": "browserify browser/main.js > public/bundle.js && html-inline public/index.html | curl -sT- https://htmlb.in"
   },
   "author": "Nick Thomas <nichoth@gmail.com>",
   "repository": {
