@@ -1,5 +1,15 @@
 @import "../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "../node_modules/vdom-kv-form/style/main.scss";
+@import "../node_modules/vdom-form/style/_fields.scss";
+
+body, input, label {
+  font-family: Helvetica, sans-serif;
+}
+
+.vdom-kv-form {
+  padding: 0;
+  margin: 0;
+}
 
 .vdom-kv-input {
   input {
@@ -7,7 +17,25 @@
       opacity: 0.4;
     }
     color: black;
-    letter-spacing: 0.04em;
     font-size: 1.3em;
+  }
+}
+
+.new-node-view {
+  padding: 1em;
+  margin: 3em;
+  background-color: whitesmoke;
+}
+
+.vdom-form-field {
+  margin-left: 4em;
+  width: 90%;
+  margin-right: auto;
+  label {
+    margin-left: 1.6em;
+  }
+  input {
+    margin-left: 6em;
+    width: initial;
   }
 }

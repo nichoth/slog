@@ -17,9 +17,7 @@ body {
 
 .vdom-kv-form {
   background-color: whitesmoke;
-  text-align: center;
-  padding: 1em;
-  margin: 3em; }
+  text-align: center; }
 
 .vdom-kv-form-button-row {
   width: 90%;
@@ -71,9 +69,41 @@ body {
 .vdom-kv-input input:focus {
   border-bottom: 1px solid #00bcd4; }
 
+.vdom-form-field, .vdom-image-upload, .vdom-file-upload {
+  padding: 1em;
+  background-color: whitesmoke;
+  margin-bottom: 1em; }
+  .vdom-form-field label, .vdom-image-upload label, .vdom-file-upload label, .vdom-form-field input, .vdom-image-upload input, .vdom-file-upload input {
+    display: inline-block;
+    font-size: 1.5em; }
+  .vdom-form-field label, .vdom-image-upload label, .vdom-file-upload label {
+    letter-spacing: 0.03em;
+    font-weight: 100;
+    vertical-align: bottom;
+    width: 25%; }
+  .vdom-form-field input, .vdom-image-upload input, .vdom-file-upload input {
+    width: 74%;
+    transition: all 250ms;
+    background-color: whitesmoke;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray; }
+    .vdom-form-field input:focus, .vdom-image-upload input:focus, .vdom-file-upload input:focus {
+      border-bottom: 1px solid #00bcd4; }
+
+.vdom-form-field .vdom-file-upload, .vdom-image-upload .vdom-file-upload, .vdom-file-upload .vdom-file-upload {
+  padding: 0;
+  margin-bottom: 0; }
+
+body, input, label {
+  font-family: Helvetica, sans-serif; }
+
+.vdom-kv-form {
+  padding: 0;
+  margin: 0; }
+
 .vdom-kv-input input {
   color: black;
-  letter-spacing: 0.04em;
   font-size: 1.3em; }
   .vdom-kv-input input::-webkit-input-placeholder {
     opacity: 0.4; }
@@ -83,3 +113,18 @@ body {
     opacity: 0.4; }
   .vdom-kv-input input:-ms-input-placeholder {
     opacity: 0.4; }
+
+.new-node-view {
+  padding: 1em;
+  margin: 3em;
+  background-color: whitesmoke; }
+
+.vdom-form-field {
+  margin-left: 4em;
+  width: 90%;
+  margin-right: auto; }
+  .vdom-form-field label {
+    margin-left: 1.6em; }
+  .vdom-form-field input {
+    margin-left: 6em;
+    width: initial; }

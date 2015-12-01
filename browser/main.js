@@ -1,10 +1,9 @@
 var vdom = require('virtual-dom');
-var Logger = require('../lib/App.js');
+var App = require('../lib/App.js');
 var observ = require('observ');
 
-var state = Logger({
-});
+var state = App();
 
-var loop = require('main-loop')( state(), Logger.render, vdom );
+var loop = require('main-loop')( state(), App.render, vdom );
 state(loop.update);
 document.getElementById('content').appendChild(loop.target);
