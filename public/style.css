@@ -127,4 +127,5 @@ body, input, label {
     margin-left: 1.6em; }
   .vdom-form-field input {
     margin-left: 6em;
-    width: initial; }
+    width: initial;
+    font-weight: 300; }
