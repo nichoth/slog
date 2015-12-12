@@ -91,3 +91,4 @@ node_modules
 bundle.js
 example/style.css
 data/db
+public/style.css
