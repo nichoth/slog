@@ -5,12 +5,12 @@ var router = require('routes')();
 var fs = require('fs');
 var shoe = require('shoe');
 
-var multilevel = require('multilevel');
-var db = require('level-sublevel')(require('level')(__dirname + '/data/db', {
-  valueEncoding: 'json'
-}));
-db.sublevel('graph', {valueEncoding: 'json'});
-multilevel.writeManifest(db, __dirname+'/data/manifest.json');
+// var multilevel = require('multilevel');
+// var db = require('level-sublevel')(require('level')(__dirname + '/data/db', {
+//   valueEncoding: 'json'
+// }));
+// db.sublevel('graph', {valueEncoding: 'json'});
+// multilevel.writeManifest(db, __dirname+'/data/manifest.json');
 
 routes.forEach(function(r) {
   router.addRoute(r, appRoute);
@@ -33,8 +33,8 @@ var server = http.createServer(function(req, res) {
 }).listen(8000);
 console.log('Listening on :8000');
 
-// websockets
-var sock = shoe(function(stream) {
-  stream.pipe( multilevel.server(db) ).pipe(stream);
-});
-sock.install(server, '/sock');
+// // websockets
+// var sock = shoe(function(stream) {
+//   stream.pipe( multilevel.server(db) ).pipe(stream);
+// });
+// sock.install(server, '/sock');

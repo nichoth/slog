@@ -6,6 +6,10 @@ body, input, label {
   font-family: Helvetica, sans-serif;
 }
 
+.app {
+  padding: 1em;
+}
+
 .vdom-kv-form {
   padding: 0;
   margin: 0;
@@ -49,4 +53,14 @@ body, input, label {
     width: initial;
     font-weight: 300;
   }
+}
+
+
+.vdom-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.vdom-list-child {
+  list-style: initial;
 }
