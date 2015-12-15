@@ -21,6 +21,16 @@ body, input, label {
   }
 }
 
+.vdom-kv-form-button {
+  &:disabled {
+    opacity: 0.4;
+    cursor: auto;
+    &:hover {
+      background-color: whitesmoke;
+    }
+  }
+}
+
 .new-node-view {
   padding: 1em;
   margin: 3em;
