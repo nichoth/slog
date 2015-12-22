@@ -44,6 +44,12 @@
     },
     "approximateSize": {
       "type": "async"
+    },
+    "createLiveStream": {
+      "type": "readable"
+    },
+    "liveStream": {
+      "type": "readable"
     }
   },
   "sublevels": {

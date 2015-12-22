@@ -31,7 +31,8 @@
     "@nichoth/state": "0.0.2",
     "bourbon": "^4.2.6",
     "level": "^1.4.0",
-    "level-sublevel": "^6.5.2",
+    "level-live-stream": "^1.4.11",
+    "level-sublevel": "https://github.com/nichoth/level-sublevel/tarball/prefix",
     "levelgraph": "^1.1.0",
     "main-loop": "^3.2.0",
     "multilevel": "^7.2.1",
@@ -43,6 +44,7 @@
     "vdom-kv-form": "0.0.8",
     "vdom-list": "0.0.1",
     "virtual-dom": "^2.1.1",
+    "websocket-stream": "^2.1.0",
     "wrouter": "0.0.5"
   }
 }
