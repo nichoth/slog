@@ -9,7 +9,7 @@ var shoe = require('shoe');
 var multilevel = require('multilevel');
 var liveStream = require('level-live-stream');
 var db = require('level-sublevel')(require('level')(__dirname + '/data/db', {
-//  valueEncoding: 'json'
+  valueEncoding: 'json'
 }));
 db.sublevel('graph');
 liveStream.install(db);
