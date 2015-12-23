@@ -42,7 +42,7 @@
     "shoe": "0.0.15",
     "vdom-form": "^0.2.5",
     "vdom-kv-form": "0.0.8",
-    "vdom-list": "0.0.1",
+    "vdom-list": "0.0.2",
     "virtual-dom": "^2.1.1",
     "websocket-stream": "^2.1.0",
     "wrouter": "0.0.5"

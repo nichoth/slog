@@ -11,7 +11,9 @@ var liveStream = require('level-live-stream');
 var db = require('level-sublevel')(require('level')(__dirname + '/data/db', {
   valueEncoding: 'json'
 }));
-db.sublevel('graph');
+db.sublevel('graph', {
+  valueEncoding: 'json'
+});
 liveStream.install(db);
 multilevel.writeManifest(db, __dirname+'/data/manifest.json');
 
