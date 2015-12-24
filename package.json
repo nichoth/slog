@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@nichoth/state": "0.0.2",
+    "after": "^0.8.1",
     "bourbon": "^4.2.6",
     "level": "^1.4.0",
     "level-live-stream": "^1.4.11",
