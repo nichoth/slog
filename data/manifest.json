@@ -50,9 +50,6 @@
     },
     "liveStream": {
       "type": "readable"
-    },
-    "foo": {
-      "type": "async"
     }
   },
   "sublevels": {

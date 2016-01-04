@@ -1,25 +1,33 @@
 var http = require('http');
 var ecstatic = require('ecstatic')({root: __dirname + '/public'});
+var rpc = require('rpc-stream');
 var routes = ['/', '/new', '/node/:id'];
 var router = require('routes')();
 var fs = require('fs');
 var shoe = require('shoe');
-//var websocket = require('websocket-stream');
-
 var multilevel = require('multilevel');
 var liveStream = require('level-live-stream');
-var db = require('level-sublevel')(require('level')(__dirname + '/data/db', {
+// var slogdb = require('slog-db-level');
+
+// var db = require('level')(__dirname+'/data/db', {
+//   valueEncoding: 'json'
+// });
+// var sdb = slogdb(db);
+//
+// var rpcServer = rpc(sdb);
+
+var db = require('level-sublevel')(require('level')(__dirname+'/data/db', {
   valueEncoding: 'json'
 }));
 db.sublevel('graph', { valueEncoding: 'utf8' });
 liveStream.install(db);
 
 // trying level plugin via level-manifest
-db.methods = db.methods || {};
-db.methods.foo = { type: 'async' };
-db.foo = function(cb) {
-  cb(null, 'bar');
-}
+// db.methods = db.methods || {};
+// db.methods.foo = { type: 'async' };
+// db.foo = function(cb) {
+//   cb(null, 'bar');
+// }
 
 multilevel.writeManifest(db, __dirname+'/data/manifest.json');
 
