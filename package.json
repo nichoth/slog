@@ -40,7 +40,6 @@
     "observ": "^0.2.0",
     "observ-struct": "^6.0.0",
     "routes": "^2.1.0",
-    "rpc-stream": "^2.1.2",
     "shoe": "0.0.15",
     "vdom-form": "^0.2.5",
     "vdom-kv-form": "0.0.8",
