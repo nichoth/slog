@@ -92,3 +92,4 @@ bundle.js
 example/style.css
 data/db
 public/style.css
+data/manifest.json
