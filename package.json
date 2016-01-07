@@ -34,7 +34,6 @@
     "level": "^1.4.0",
     "slog-db-level": "https://github.com/nichoth/slog-db-level/tarball/master",
     "level-live-stream": "^1.4.11",
-    "level-sublevel": "https://github.com/nichoth/level-sublevel/tarball/prefix",
     "main-loop": "^3.2.0",
     "multilevel": "^7.2.1",
     "observ": "^0.2.0",
