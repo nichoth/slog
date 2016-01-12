@@ -40,7 +40,7 @@
     "routes": "^2.1.0",
     "shoe": "0.0.15",
     "slog-db-level": "https://github.com/nichoth/slog-db-level/tarball/master",
-    "vdom-crud-li": "0.0.0",
+    "vdom-crud-li": "0.0.2",
     "vdom-form": "^0.2.5",
     "vdom-kv-form": "0.0.8",
     "vdom-list": "0.0.3",
