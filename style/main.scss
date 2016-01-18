@@ -25,7 +25,12 @@ body, input, label {
   }
 }
 
+.vdom-kv-form-button-row {
+  text-align: right;
+}
+
 .vdom-kv-form-button {
+  margin-left: 1em;
   &:disabled {
     opacity: 0.4;
     cursor: auto;
@@ -62,5 +67,6 @@ body, input, label {
 }
 
 li.slog-value-item {
+  padding-right: 5em;
   list-style-type: initial;
 }

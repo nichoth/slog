@@ -44,6 +44,7 @@
     "vdom-form": "^0.2.5",
     "vdom-kv-form": "0.0.8",
     "vdom-list": "0.0.3",
+    "vdom-metadata-browser": "0.0.2",
     "virtual-dom": "^2.1.1",
     "wrouter": "0.0.5"
   }
